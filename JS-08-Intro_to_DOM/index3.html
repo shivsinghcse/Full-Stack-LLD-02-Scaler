@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title" class="content visible">Scaler</h1>
+
+    <script>
+        
+        
+        const title = document.querySelector('#title')
+
+        console.log(title);
+        console.log(title.classList);
+
+
+        title.classList.add("highlight")
+        console.log(title, 'added highlight');
+
+        title.classList.remove('visible')
+        console.log(title, 'visible removed');
+
+        if (title.classList.contains('visible')) {
+            console.log('has content class');
+        } else {
+            console.log('not have');
+        }
+
+
+    </script>
+</body>
+
+</html>
